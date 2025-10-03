@@ -1,0 +1,37 @@
+h1{
+    color: rgb(33, 60, 85);
+    text-align:center;
+    font-size:60px;
+    text-decoration: underline color rgb(10, 10, 15) 3px;
+    padding: 3px;
+    background-color: burlywood;
+    text-decoration: underline solid black;
+    
+}
+h2{
+    color: rgb(28, 0, 105);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px, 20px, 0 20px;
+
+
+    background-color: antiquewhite;
+    border: 5px rgb(167, 102, 102);
+    margin-top: 6px;
+    margin-bottom: 50px ;
+    width: 50%
+    
+}
+h3{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-decoration-style: solid; 
+    text-decoration-thickness: 20px;
+    border: 3px solid rgb(5, 56, 122);
+    border-width: 2px; color: rgb(8, 8, 8);
+    border-bottom-color: rgb(33, 206, 154);
+    padding: 3px;
+    background-color: rgb(137, 148, 214);
+    width:20%
+}
