@@ -1,22 +1,22 @@
 h1{
     color: rgb(33, 60, 85);
     text-align:center;
-    font-size:60px;
+    font-size:40Px;
     text-decoration: underline color rgb(10, 10, 15) 3px;
-    padding: 3px;
+    padding: 40px;
     background-color: burlywood;
-    text-decoration: underline solid black;
+    text-decoration: dotted underline rgb(85, 46, 228);
     
 }
 h2{
     color: rgb(28, 0, 105);
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     padding: 20px, 20px, 0 20px;
 
 
     background-color: antiquewhite;
-    border: 5px rgb(167, 102, 102);
+    border: 5px rgb(0, 0, 0);
     margin-top: 6px;
     margin-bottom: 50px ;
     width: 50%
@@ -27,11 +27,70 @@ h3{
     text-align: center;
     font-size: 25px;
     text-decoration-style: solid; 
-    text-decoration-thickness: 20px;
-    border: 3px solid rgb(5, 56, 122);
+    text-decoration-thickness: 60px;
+    border: 3px solid rgb(98, 153, 226);
     border-width: 2px; color: rgb(8, 8, 8);
-    border-bottom-color: rgb(33, 206, 154);
-    padding: 3px;
-    background-color: rgb(137, 148, 214);
-    width:20%
+    border-bottom-color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(190, 165, 165);
+    width:100%
+    
 }
+p{
+    border:1px solid rgb(7, 4, 4);
+    width: 30%;
+}
+ol{
+    border: 1px solid rgb(141, 141, 141);
+    padding:0;
+}
+li{
+    background-color: rgb(0, 0, 0);
+}
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+        :root {
+            --primary: #ebcfbb;
+            --secondary: #CD853F;
+            --accent: #D2691E;
+            --light: #F5F5DC;
+            --dark: #c26262;
+            --gray: #8B7355;
+        }
+   body {
+            background-color: #000d58;
+            color: var(--dark);
+            text-align: center;
+        }
+        
+        p{
+            border:1px solid rgb(230, 230, 230);
+            width:20%;
+            margin-top:0;
+            margin-bottom:0;
+        }
+        ol{
+            border:2px solid rgb(204, 31, 31);
+            padding:0;
+        }
+     
+       
+
+       
+
+   
+
+
+   
+
+
+
+      
+      
+     
+
