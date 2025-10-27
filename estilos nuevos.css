@@ -154,4 +154,20 @@ img :hover{
 box-shadow: 10px 20px 30px 20px red;
 transform: translateY(-5px);
 }
-
+ol{
+  color:red;
+  border-color: #ce08ff;
+}
+a{
+  color: red;
+  margin: auto;
+  
+}
+.camiseta-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.camiseta-link:hover {
+  opacity: 0.95;
+}
