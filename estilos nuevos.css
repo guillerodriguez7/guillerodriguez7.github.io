@@ -28,12 +28,10 @@ h1 {
   margin-bottom: 30px;
   color: #e2b4da;
   font-size: 40px;
-  background-color: rgb(30, 29, 44);
+  
 }
-h2{
-    color:rgb(247, 211, 11);
-    text-align: center;
-    background-color: rgb(75, 82, 88);
+h3{
+  color: rgb(131, 113, 9);
 }
 
 
@@ -166,7 +164,7 @@ transform: translateY(-5px);
 }
 
 ol{
-  color:red;
+  color:rgb(131, 49, 49);
   border-color: #ce08ff;
   margin: auto;
   padding-top: 25px;
@@ -175,7 +173,7 @@ ol{
   width: 300px;
 }
 a{
-  color: red;
+  color: rgb(253, 253, 253);
   margin: auto;
   
 }
@@ -188,8 +186,12 @@ a{
   opacity: 0.95;
 }
 p{
-  font-size: 10px;
+  font-size: 10px; 
 }
+ li:hover{
+  background-color: #e40303;
+  width: 40px;
+ }
 
  
   
