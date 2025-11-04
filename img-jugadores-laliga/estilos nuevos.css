@@ -1,0 +1,197 @@
+html {
+  scroll-behavior: smooth;
+ 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ce08ff;
+  color: #0080ff;
+    
+  background-image: url('imagenes/champions.jpeg');
+  background-size: cover;       
+  background-position: center;  
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  color: #212529;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e2b4da;
+  font-size: 40px;
+  
+}
+h3{
+  color: rgb(131, 113, 9);
+}
+
+
+.logos-ligas {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  list-style: none;
+  padding:80px;
+  margin:auto;
+  text-align: center;
+ 
+}
+
+.logos-ligas img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+
+.logos-ligas img:hover {
+  transform: scale(1.2);
+}
+
+
+.camisetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+
+.camiseta-card {
+  width: 180px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.camiseta-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: rgb(13, 27, 19);
+  overflow: hidden;
+}
+
+.card-front {
+  background: rgb(255, 255, 255);
+}
+
+.card-back {
+  background: linear-gradient(135deg, #000000, #7c9fda);
+  color: rgb(19, 127, 160);
+  transform: rotateY(180deg);
+}
+
+.card-front img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 6px 0;
+  display: block;
+}
+
+.card-front h3 {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 4px 0 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.card-back p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px 0;
+  color:red;
+}
+.card-back img {
+  width: 135%;
+  height: 115%;
+  object-fit: cover; 
+  display: block;
+  line-height: 1.2;
+   font-size: 10px;
+  font-weight: bold;
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid #e0e0e0;
+  color: #ff9100;
+  font-size: 0.95em;
+}
+img :hover{
+box-shadow: 10px 20px 30px 20px red;
+transform: translateY(-5px);
+}
+
+ol{
+  color:rgb(131, 49, 49);
+  border-color: #ce08ff;
+  margin: auto;
+  padding-top: 25px;
+  text-align: center;
+  margin-top: 30px;
+  width: 300px;
+}
+a{
+  color: rgb(253, 253, 253);
+  margin: auto;
+  
+}
+.camiseta-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.camiseta-link:hover {
+  opacity: 0.95;
+}
+p{
+  font-size: 10px; 
+}
+ li:hover{
+  background-color: #e40303;
+  width: 40px;
+ }
+
+ 
+  
