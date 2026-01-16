@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas</title>
+    <style>
+        p{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 30px 0 0 30px;
+            margin-top: 70px;
+        }
+        p:first-of-type{
+            margin-top: 15px
+        }
+        div{
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            padding: 15px;
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            top: 15px;
+            left: 100px;  
+         }
+         img{
+            float: left;
+            margin-right: 10px;
+            
+         }
+         p:nth-of-type(2), div:nth-of-type(2) {
+            background-color: blue;
+         }
+         p:nth-of-type(3), div:nth-of-type(3) {
+            background-color: green;
+         }
+         div:nth-of-type(1){
+            z-index: 1;
+         }
+         p:hover+div{
+            z-index: 2;
+         }
+    </style>
+</head>
+<body>
+    <p>Modelo 1</p>
+    <div>
+        <img src="imagenes/ASTON.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsa dolore quidem reprehenderit deleniti doloribus praesentium odit autem vitae quis explicabo repellat, provident, minus blanditiis minima error officia itaque dolores!
+        Laudantium harum cupiditate quo quisquam non a maiores, fugit eos modi assumenda? Possimus quae deserunt sit at voluptas. At ea in sunt tempore placeat officia similique tenetur! Totam, facere soluta!
+        Neque dolores architecto voluptates illum eius aspernatur totam rerum esse saepe modi rem accusamus aliquid dolorem ducimus molestiae, sunt velit vero, at veritatis nulla. Doloribus repudiandae cumque similique dolorum? Molestiae.</div>
+        <p>Modelo 2</p>
+    <div>
+        <img src="imagenes/ASTON.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsa dolore quidem reprehenderit deleniti doloribus praesentium odit autem vitae quis explicabo repellat, provident, minus blanditiis minima error officia itaque dolores!
+        Laudantium harum cupiditate quo quisquam non a maiores, fugit eos modi assumenda? Possimus quae deserunt sit at voluptas. At ea in sunt tempore placeat officia similique tenetur! Totam, facere soluta!
+        Neque dolores architecto voluptates illum eius aspernatur totam rerum esse saepe modi rem accusamus aliquid dolorem ducimus molestiae, sunt velit vero, at veritatis nulla. Doloribus repudiandae cumque similique dolorum? Molestiae.</div>
+        <p>Modelo 3</p>
+    <div>
+        <img src="imagenes/ASTON.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsa dolore quidem reprehenderit deleniti doloribus praesentium odit autem vitae quis explicabo repellat, provident, minus blanditiis minima error officia itaque dolores!
+        Laudantium harum cupiditate quo quisquam non a maiores, fugit eos modi assumenda? Possimus quae deserunt sit at voluptas. At ea in sunt tempore placeat officia similique tenetur! Totam, facere soluta!
+        Neque dolores architecto voluptates illum eius aspernatur totam rerum esse saepe modi rem accusamus aliquid dolorem ducimus molestiae, sunt velit vero, at veritatis nulla. Doloribus repudiandae cumque similique dolorum? Molestiae.</div>
+</body>
+</html>
