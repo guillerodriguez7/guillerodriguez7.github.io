@@ -1,63 +1,68 @@
-html {
-  scroll-behavior: smooth;
- 
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #ce08ff;
-  color: #0080ff;
-    
-  background-image: url('imagenes/nuevo\ coliseum.jpg');
-  background-size: cover;       
-  background-position: center;  
-  background-attachment: fixed; 
-  background-repeat: no-repeat; 
 
-  
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 20px;
-  padding: 20px;
-  color: #212529;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #e2b4da;
-  font-size: 40px;
-  background-color: rgb(49, 48, 66);
-}
-h2{
-    color:rgb(248, 211, 0);
-    text-align: center;
-    background-color: rgb(0, 102, 190);
-}
-footer {
-  text-align: center;
-  margin-top: 60px;
-  padding-top: 25px;
-  border-top: 1px solid #e0e0e0;
-  color: #ff9100;
-  font-size: 0.95em;
-}
-ol{
-   display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style: none;
-  padding:40px;
-  margin:auto;
-  text-align: center;
-  box-shadow:  red;
-  transform: translateY(-5px);
-}
+  html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px;
+            padding: 20px;
+            background-color: #ce08ff;
+            color: #0080ff;
+            
+            background-image: url('imagenes/nuevo\ coliseum.jpg');
+            background-size: cover;       
+            background-position: center;  
+            background-attachment: fixed; 
+            background-repeat: no-repeat; 
 
-img :hover{
-box-shadow: 10px 20px 30px 20px red;
-transform: translateY(-5px);
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            color: #212529;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #e2b4da;
+            font-size: 40px;
+            background-color: rgb(49, 48, 66);
+        }
+        h2{
+            color:rgb(248, 211, 0);
+            text-align: center;
+            background-color: rgb(0, 102, 190);
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid #e0e0e0;
+            color: #ff9100;
+            
+        }
+       
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            width: 30%;
+            text-align: center;
+             margin: 20px;
+            padding: 20px;
 
-}
-a:link{
-    color: rgb(30, 128, 0);
-}
+            
+            
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        a:link{
+            color: rgb(30, 128, 0);
+        }
+        a{
+            color: white;
+        }
+        p{
+            color: white;
+        }
