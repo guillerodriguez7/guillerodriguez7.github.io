@@ -1,74 +1,121 @@
-body{ 
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    
-}
-h1{
-    font-family: ballet;
-    text-align: center;
-   color: rgb(255, 0, 0);
-   font-size: 50px;
-    
+body{
+ background-image: url('imagenes/nuevo coliseum.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;       /* Ajusta el fondo al tamaño de la pantalla */
+   background-position: center;  /* Centra la imagen */
+   background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   color: white;  
 }
 
-h3{
-     font-family: Kablammo;
-    font-size: 20px;
+h1 {
+   
     text-align: center;
-    color: rgb(7, 0, 5);
-    border-color: rgb(221, 20, 20);
+    color: #cbcbe1;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
-li{
+
+
+ol {
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
     text-align: center;
     display: inline-block;
-    width:calc(100%/6);
-    margin: auto;
-    background-color:rgb(43, 23, 133);
+    width: calc(100% / 6);
+    margin: 5px;
+    background-color: rgba(43, 23, 133, 0.8);
     color: rgb(93, 194, 34);
-}
-ol{
-    padding:0;
+    padding: 10px 5px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
+li:hover {
+    transform: scale(1.05);
+    background-color: rgba(43, 23, 133, 1);
+}
+
+
+section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+article {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px;
+}
+
+
+img {
+    width: 30%;
+    max-width: 300px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+img:hover {
+    box-shadow: 0 10px 20px rgba(168, 54, 54, 0.6);
+    transform: translateY(-5px);
+}
 
 h2{
-    font-family:kablammo;
-    font-size:40px;
-    text-decoration: underline 5px rgb(196, 141, 141);
-}
-
-article{
-    text-align: center;
-    width: 29%;
-    display: inline-block;
-    vertical-align: top;
-      
-}
-section{
+    background-size: cover;
+    font-size: 30px;
     
-    width: 70%;
-
+    text-align: center;
+    
 }
- img{
-    width: 70%;
-     
- }
-
-  body {
-            background-image: url('imagenes/champions.jpeg'); 
-            color: var(--dark);
-            background-repeat: no-repeat;
-           
-            background-size: cover;
-        
-        }
-img:hover {
-box-shadow: 10px 20px 30px color(srgb rgb(168, 54, 54) green blue);
-transform: translateY(-5px);
+p {
+    color: #fff;
+    line-height: 1.6;
+    margin: 15px 0;
 }
-p{
-    color:rgb(0, 0, 0);
-    border: 3px solid red;
-    background-color: aqua;
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f0c040;
+}
+
+
+@media (max-width: 420px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    li {
+        width: 45%;
+        margin: 5px 2%;
+    }
+
+    article {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
 }

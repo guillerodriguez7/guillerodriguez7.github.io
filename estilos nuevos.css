@@ -68,9 +68,11 @@ h3{
 
 
 .camiseta-card {
-  width: 180px;
-  height: 220px;
+  width: 190px;
+  height: 215px;
   perspective: 1000px;
+  padding: 60px;
+
 }
 
 .card-inner {
@@ -92,7 +94,7 @@ h3{
   top: 0;
   left: 0;
   width: 90%;
-  height: 98%;
+  height: 97%;
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -107,6 +109,7 @@ h3{
 
 .card-front {
   background: rgb(255, 255, 255);
+  border-color: #0080ff;
 }
 
 .card-back {
@@ -131,12 +134,6 @@ h3{
   line-height: 1.2;
 }
 
-.card-back p {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 5px 0;
-  color:red;
-}
 .card-back img {
   width: 130%;
   height: 130%;
@@ -150,14 +147,7 @@ h3{
 }
 
 
-footer {
-  text-align: center;
-  margin-top: 60px;
-  padding-top: 25px;
-  border-top: 1px solid #e0e0e0;
-  color: #ff9100;
-  font-size: 0.95em;
-}
+
 img :hover{
 box-shadow: 10px 20px 30px 20px red;
 transform: translateY(-5px);
