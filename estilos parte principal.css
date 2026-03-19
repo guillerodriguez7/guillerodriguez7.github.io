@@ -6,25 +6,35 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
     padding: 20px;
-    color: #212529;
-    background-color: #ce08ff;
+    color: #b6d1ec;
+    background-color: #afafaf;
     background-image: url('imagenes/nuevo\ coliseum.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
+    
+  
+}
+  body > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #e2b4da;
+    color: #ffffff;
     font-size: 40px;
-    background-color: rgb(49, 48, 66);
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
+     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
 h1:hover {
@@ -52,10 +62,66 @@ footer {
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
+.logos-ligas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
 
 footer:hover {
     background-color: rgba(49, 48, 66, 0.95);
 }
+p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    list-style: none;
+}
+footer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border-top: 1px solid #e0e0e0;
+    color: #ff9100;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    bottom: 0;
+}
+p a {
+    text-decoration: none; 
+    color: #e2b4da;       
+    font-weight: bold;
+}
+.logos-ligas li {
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+
+
+.logos-ligas img {
+    display: block;
+    transition: transform 0.4s ease; 
+    cursor: pointer;
+}
+
+
+.logos-ligas li:hover img {
+    transform: scale(1.1);
+}
+
+
+.logos-ligas li:hover {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5); 
+}
+
 
 @media (max-width: 420px){
 
