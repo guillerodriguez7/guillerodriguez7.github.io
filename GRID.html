@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        main{
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-auto-rows: 50vh ;
+        }
+        article{
+            border: 1px solid red;
+        }
+        article:nth-child(1){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        article:nth-child(2){
+            background-image: url(img-jugadores-laliga/luis-milla.jpg);
+            background-size: cover;
+            grid-column: 2/4;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main><article>contenido 1</article>
+    <article>contenido 2</article>
+    <article>contenido 3</article>
+    <article>contenido 4</article>
+    <article>contenido 5</article>
+    <article>contenido 6</article></main>
+</body>
+</html>
