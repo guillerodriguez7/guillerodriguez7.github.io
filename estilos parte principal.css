@@ -35,6 +35,19 @@ body > a {
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    color: #ffffff; 
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+body > a span {
+    display: none;
+}
+
+body > a img {
+    border: none;
+    background: transparent;
 }
 
 h1 {
@@ -165,20 +178,6 @@ p a {
         height: auto;
     }
 }
-body > a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #ffffff; 
-    border: none;
-    background: transparent;
-    padding: 0;
-}
 
-body > a img {
-    border: none;
-    background: transparent;
-}
 
 
