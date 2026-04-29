@@ -2,22 +2,35 @@ html {
     scroll-behavior: smooth;
 }
 
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
     padding: 20px;
-    color: #b6d1ec;
-    background-color: #afafaf;
+    color: #000000; 
+    background-color: #f0f0f0;
     background-image: url('imagenes/nuevo\ coliseum.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
-    
-  
 }
-  body > a {
+
+body > a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -32,9 +45,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 h1:hover {
@@ -42,26 +53,35 @@ h1:hover {
 }
 
 h2 {
-    color: rgb(248, 211, 0);
+    color: #ffffff;
     text-align: center;
-    background-color: rgb(0, 102, 190);
+    background-color: #004a8d;
     padding: 15px;
     border-radius: 8px;
 }
-img{
-    border-color: white;
+
+img {
+    border: 2px solid white;
 }
+
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 60px;
-    padding-top: 25px;
+    padding: 25px;
     border-top: 1px solid #e0e0e0;
-    color: #ff9100;
-    padding: 20px;
-    background-color: rgba(49, 48, 66, 0.8);
+    color: #ffcc00;
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
+
+footer:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
 .logos-ligas {
     display: flex;
     flex-wrap: wrap;
@@ -71,9 +91,6 @@ footer {
     padding: 0;
 }
 
-footer:hover {
-    background-color: rgba(49, 48, 66, 0.95);
-}
 p {
     display: flex;
     flex-wrap: wrap;
@@ -81,106 +98,87 @@ p {
     gap: 8px;
     margin-top: 30px;
     list-style: none;
-}
-footer {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-    border-top: 1px solid #e0e0e0;
-    color: #ff9100;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    bottom: 0;
-}
-p a {
-    text-decoration: none; 
-    color: #e2b4da;       
-    font-weight: bold;
-}
-.logos-ligas li {
-    overflow: hidden; 
-    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
 }
 
+p a {
+    text-decoration: underline;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.logos-ligas li {
+    overflow: hidden;
+    border-radius: 8px;
+}
 
 .logos-ligas img {
     display: block;
-    transition: transform 0.4s ease; 
+    transition: transform 0.4s ease;
     cursor: pointer;
 }
-
 
 .logos-ligas li:hover img {
     transform: scale(1.1);
 }
 
-
 .logos-ligas li:hover {
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.5); 
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
 }
 
-
-@media (max-width: 420px){
-
-body{
-    margin:10px;
-    padding:10px;
+@media (max-width: 420px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 26px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .logos-ligas img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    body a img {
+        width: 30px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
 }
 
-h1{
-    font-size:26px;
-    padding:15px;
+@media (min-width: 421px) {
+    .logos-ligas img {
+        width: 320px;
+        height: auto;
+    }
+}
+body > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff; 
+    border: none;
+    background: transparent;
+    padding: 0;
 }
 
-h2{
-    font-size:20px;
-    padding:10px;
-}
-
-.logos-ligas{
-    list-style:none;
-    padding:0;
-}
-
-.logos-ligas img{
-    width:100%;
-    max-width:100%;
-    height:auto;
-}
-
-body a img{
-    width:30px;
-}
-
-footer{
-    font-size:14px;
-    padding:15px;
-}
-
-p{
-    font-size:14px;
-    text-align:center;
-}
-
-}
-
-@media (min-width: 421px){
-
-.logos-ligas{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-}
-
-.logos-ligas img{
-    width:320px;
-    height:auto;
-}
-
+body > a img {
+    border: none;
+    background: transparent;
 }
 
 
